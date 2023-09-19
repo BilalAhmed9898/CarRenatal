@@ -1,0 +1,96 @@
+.Container-p1{
+    padding: 30px 60px;
+}
+p{
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+p:hover{
+    color: red;
+    cursor: pointer;
+
+}
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon img{
+    width: 150px;
+    height: 50px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.Buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Buttons button{
+   background-color: red;
+   color: white;
+   padding: 15px 20px;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   font-size: 18px;
+   box-shadow: 0px 4px 6px rgba(201, 57, 57, 0.4);
+}
+.MainHero{
+    margin-top: 40px;
+    display: flex;
+}
+.herotext{
+    width: 50%;
+    line-height:1;
+}
+.herotext h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.herotext h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+.herotext .unique{
+ color: red;
+}
+.herotext p{
+ font-size: 18px;
+ color: gray;
+ font-weight: 500;
+}
+.herotext .btn1{
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px 20px 20px 0px;
+    box-shadow: 0px 4px 6px rgba(201, 57, 57, 0.4);
+}
+.herotext .btn2{
+    background-color: black;
+    box-shadow: 0px 4px 6px rgba(33, 31, 31, 0.4);
+}
+
+.HeroImage .image{
+ margin-top: 20px;
+ width: 95%;
+ height: 100%;
+}
+.Main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.boxes{
+    display: flex   ;
+}
