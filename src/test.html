@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+<style>
+ /* Style for the FAQ container */
+.faq {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for the question button */
+.question-button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the answer (initially hidden) */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: max-height 0.3s ease;
+}
+
+</style>
+</head>
+<body>
+    <div class="faq">
+        <div class="question">
+            <button class="question-button">Question 1</button>
+            <div class="answer">Answer to Question 1</div>
+        </div>
+        <div class="question">
+            <button class="question-button">Question 2</button>
+            <div class="answer">Answer to Question 2</div>
+        </div>
+        <!-- Add more questions and answers as needed -->
+    </div>
+    <script>
+// Get all question buttons and add click event listeners
+const questionButtons = document.querySelectorAll('.question-button');
+
+questionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+
+        // Iterate through all question buttons to close any open questions
+        questionButtons.forEach(otherButton => {
+            const otherAnswer = otherButton.nextElementSibling;
+            if (otherButton !== button && otherAnswer.style.maxHeight) {
+                otherAnswer.style.maxHeight = null;
+            }
+        });
+
+        // Toggle the answer's max-height to create the animation effect
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

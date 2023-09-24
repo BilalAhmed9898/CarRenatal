@@ -19,6 +19,7 @@ function ContactForm() {
       <input type="email" name="" id="" placeholder='Yourname@gmail.com' />
       <label htmlFor="" className='FullName'>Tell us About it <span className='Unique'>*</span></label>
       <textarea name="" id="" cols="60" rows="10" placeholder='Write Here . . .'></textarea>
+      <button>Submit</button>
      </form>
      </div>
     </div>

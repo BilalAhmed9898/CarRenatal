@@ -9,6 +9,8 @@ import Testimonials from '../Components/Testimonials'
 import ChooseUs from '../Components/ChooseUs'
 import Download from '../Components/Download'
 import BookCar from '../Components/BookCar'
+import FAQs from '../Components/FAQs'
+import VehicleInfo from '../Components/VehicleInfo'
 
 function Home() {
   return (
@@ -17,9 +19,11 @@ function Home() {
        <Hero/>
        <BookCar/>
        <PlainTrip/>
+       <VehicleInfo/>
        <Banner/>
        <ChooseUs/>
        <Testimonials/>
+       <FAQs/>
        <Download/>
        <Footer/>
     </div>

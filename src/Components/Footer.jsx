@@ -11,7 +11,7 @@ function Footer() {
           We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.
         </p>
         <p>(123) -456-789</p>
-        <p><IconQuote width={50} height={50} color='red' /> carrental@gmail.com</p>
+        <p>Carrental@gmail.com</p>
       </div>
       <div className="child2">
         <h2>COMPANY</h2>

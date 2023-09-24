@@ -63,6 +63,7 @@ p:hover {
     border-radius: 5px;
     font-size: 18px;
     box-shadow: 0px 4px 6px rgba(201, 57, 57, 0.4);
+
 }
 
 .MainHero {
@@ -111,6 +112,8 @@ p:hover {
 }
 
 .herotext .btn2 {
+    background-color: black;
+    color: white;
     box-shadow: 0px 4px 6px rgba(33, 31, 31, 0.4);
 }
 
@@ -250,6 +253,7 @@ p:hover {
 }
 
 .Testimonial .text h1 {
+    color: black;
     font-size: 50px;
     font-weight: 700;
 }
@@ -275,10 +279,12 @@ p:hover {
     background-color: white;
     box-shadow: 0px 4px 6px rgba(18, 18, 18, 0.4);
     border-radius: 10px;
+    color: black;
 }
 
 .boxes .box1 p {
     font-size: 20px;
+    color: black;
     font-weight: 600;
 }
 
@@ -291,6 +297,7 @@ p:hover {
 }
 
 .boxes .box2 p {
+    color: black;
     font-size: 20px;
     font-weight: 600;
 }
@@ -455,13 +462,13 @@ p:hover {
 
 .TextFeilds input {
     width: 30%;
-    height:40px; 
-    padding-left: 10px;  
+    height: 40px;
+    padding-left: 10px;
     border: 1px solid rgb(193, 209, 208);
     border-radius: 2px;
     font-family: 'Poppins', sans-serif;
 }
-  
+
 .TextFeilds button {
     background-color: red;
     color: white;
@@ -473,6 +480,7 @@ p:hover {
     font-size: 18px;
     box-shadow: 0px 4px 6px rgba(201, 57, 57, 0.4);
 }
+
 /* BackgroundImage Css */
 .BackgroundImage {
     position: relative;
@@ -491,20 +499,24 @@ p:hover {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.1;
-    z-index: -1; /* Place the pseudo-element below the content */
+    z-index: -1;
+    /* Place the pseudo-element below the content */
 }
 
 .BackgroundImage h2 {
-    color: #000; /* Set the text color */
+    color: #000;
+    /* Set the text color */
     font-size: 32px;
     font-weight: 600;
 }
 
 .BackgroundImage h4 {
-    color: #000; /* Set the text color */
+    color: #000;
+    /* Set the text color */
     font-size: 20px;
     font-weight: 500;
 }
+
 .Banner2 {
     position: relative;
     height: 50vh;
@@ -525,7 +537,8 @@ p:hover {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
-    z-index: -1; /* Place the pseudo-element below the content */
+    z-index: -1;
+    /* Place the pseudo-element below the content */
 }
 
 .Banner2 h1 {
@@ -536,9 +549,11 @@ p:hover {
 
 .Banner2 h2 {
     font-size: 32px;
-    color:rgb(239, 67, 67); /* Set the text color */
+    color: rgb(239, 67, 67);
+    /* Set the text color */
 }
-.Banner2{
+
+.Banner2 {
     width: 100%;
     height: 30vh;
     background-repeat: no-repeat;
@@ -550,54 +565,302 @@ p:hover {
 
 /* Contact Form Css */
 
-.ContactForm{
+.ContactForm {
     background-image: url('../images/banners/bg-contact.png');
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    margin: 50px 0px;
 }
 
-.ContactForm .child1{
+.ContactForm .child1 {
     width: 50%;
 }
-.ContactForm .child1 h1{
+
+.ContactForm .child1 h1 {
     font-size: 50px;
 }
-.ContactForm .child1 p{
+
+.ContactForm .child1 p {
     width: 70%;
     font-size: 18px;
     font-weight: 500;
     color: gray;
     margin-bottom: 50px;
 }
-.ContactForm .child1 h2{
+
+.ContactForm .child1 h2 {
     font-size: 20px;
     font-weight: 700;
 }
-.ContactForm .child2{
+
+.ContactForm .child2 {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
-.ContactForm .child2 .FullName{
+
+.ContactForm .child2 .FullName {
     display: block;
     margin: 15px 0px;
 }
-.ContactForm .child2 .FullName .Unique{
-   color: red;
-   font-size: 20px;
-   font-weight: 600;
+
+.ContactForm .child2 .FullName .Unique {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
 }
-.ContactForm .child2 input ,textarea{
+
+.ContactForm .child2 input,
+textarea {
     width: 90%;
     background-color: rgb(229, 228, 228);
-    padding: 15px 30px;  
+    padding: 15px 30px;
     outline: none;
     border: none;
 }
-.ContactForm .child2 input ,textarea::placeholder{
-    font-family: 'Poppins', sans-serif; 
-    font-size: 16px;  
+
+.ContactForm .child2 input,
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
+
+.ContactForm .child2 button {
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(201, 57, 57, 0.4);
+}
+
+/* FAQs Css */
+
+/* Style for the FAQ container */
+.Faqsmain {
+    background-image: url('../images/faq/car.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.faq {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+}
+
+.faq h3 {
+    font-size: 22px;
+}
+
+.faq h1 {
+    font-size: 42px;
+}
+
+.faq p {
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+/* Style for the question button */
+.question-button {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(41, 40, 40, 0.4);
+    transition: background-color 0.2s ease;
+}
+
+.question-button:hover {
+    background-color: orangered;
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+/* Style for the answer (initially hidden) */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    padding-right: 20px;
+    background-color: #fff;
+    transition: max-height 0.3s ease, ;
+}
+
+/* Style for open answers */
+.answer.open {
+    max-height: 1000px;
+    /* Adjust as needed */
+    padding: 10px;
+}
+
+/* Team css */
+.mainTeam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    gap: 30px;
+}
+
+.mainTeam .child {
+    width: 31%;
+    height: 70vh;
+    background-color: #f8f6f6;
+    box-shadow: 0px 4px 6px rgba(91, 88, 88, 0.4);
+    border-radius: 10px;
+}
+.mainTeam .child:hover {
+    box-shadow: 0px 4px 6px rgba(25, 25, 25, 0.4);
+}
+.mainTeam .child .profile{
+    width:100%;
+    height: 50vh;
+    overflow: hidden;
+}
+.mainTeam .child .title{
+    width:100%;
+    height: 20vh;
+    text-align: center;
+}
+ /* About INfo Css */
+ .AboutInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .AboutInfo .child1{
+    width: 50%;
+ }
+ .AboutInfo .child1 .Image{
+    margin-left: 60px;
+    margin-top: 50px;
+ }
+ .AboutInfo .child2{
+    width: 50%;
+ }
+ .AboutInfo .child2 h2{
+    font-size: 26px;
+    font-weight: 400;
+ }
+ .AboutInfo .child2 h1{
+    font-size: 46px;
+    font-weight: 700;
+ }
+ .AboutInfo .child2 p{
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+ }
+ .AboutInfo .child2 .child2aa{
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+ }
+ .AboutInfo .child2 .child2aa .child2a{
+    display: flex;
+    flex-direction: column;
+ }
+ .AboutInfo .child2 .child2aa .child2a .child2ab{
+    display: flex;
+ }
+ .AboutInfo .child2 .child2aa .child2a h1{
+ font-size: 40px;
+}
+ .AboutInfo .child2 .child2aa .child2a p{
+ font-size: 18px;
+  color: gray;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.VehicleInfo{
+    display: flex;
+    flex-direction: column;
+}
+.VehicleInfo .text{
+    text-align: center;
+}
+.VehicleInfo .text h2{
+  font-size: 32px;
+  font-weight: 400;
+}
+.VehicleInfo .text h1{
+  font-size: 46px;
+  font-weight: 600;
+}
+.VehicleInfo .text p{
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 50px;
+}
+.VehicleInfo .content{
+    display: flex;
+}
+.VehicleInfo .content .child1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.VehicleInfo .content .child1 button{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(224, 223, 223);
+    color: black;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+}
+.VehicleInfo  .content .child1 button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.VehicleInfo .child2{
+    width: 40%;
+    padding: 30px;
+}
+.VehicleInfo .child3{
+    width: 30%;
+    padding: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 60vh;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    padding: 13px;
+    text-align: left;
+  }
+  th {
+      background-color: orangered;
+    color: white;
+    text-align: left;
+  }
