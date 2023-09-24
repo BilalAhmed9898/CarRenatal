@@ -1,5 +1,8 @@
 import React from 'react'
 import './CompApp.css'
+import Icon1 from '../images/plan/icon1.png'
+import Icon2 from '../images/plan/icon2.png'
+import Icon3 from '../images/plan/icon3.png'
 
 function PlainTrip() {
     return (
@@ -10,24 +13,24 @@ function PlainTrip() {
             </div>
             <div className="boxes">
                 <div className="child1">
-                    <img src="" alt="" srcset="" />
-                    <h3>Title</h3>
+                    <img src={Icon1} alt="" srcset="" />
+                    <h3>Select Car</h3>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet corrupti blanditiis excepturi asperiores, molestiae repudiandae!
+                    Our knowledgeable and friendly operators are always ready to help with any questions or concerns
+                </p>
+                </div>
+                <div className="child2">
+                    <img src={Icon2} alt="" srcset="" />
+                    <h3>Contact Operator</h3>
+                    <p>
+                        Our knowledgeable and friendly operators are always ready to help with any questions or concerns
                     </p>
                 </div>
                 <div className="child2">
-                    <img src="" alt="" srcset="" />
-                    <h3>Title</h3>
+                    <img src={Icon3} alt="" srcset="" />
+                    <h3>Let's Drive</h3>
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est repellendus eius dicta minus eos veritatis?
-                    </p>
-                </div>
-                <div className="child3">
-                    <img src="" alt="" srcset="" />
-                    <h3>Title</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor repellat illo mollitia amet similique.
+                        Our knowledgeable and friendly operators are always ready to help with any questions or concerns
                     </p>
                 </div>
             </div>
