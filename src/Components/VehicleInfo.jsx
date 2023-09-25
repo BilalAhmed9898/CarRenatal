@@ -35,11 +35,9 @@ function VehicleInfo() {
                         );
                     })}
                 </div>
-                <div className="child2">
                     {selectedCar && (
                         <img src={selectedCar.img} alt={selectedCar.name} />
                     )}
-                </div>
                 <div className="child3">
                     {selectedCar && (
                         <table>

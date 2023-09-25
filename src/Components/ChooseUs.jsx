@@ -9,9 +9,7 @@ import Icon3 from '../images/chooseUs/icon3.png'
 function ChooseUs() {
     return (
         <div className='Chooseus Container-p1'>
-            <div className="Image">
                 <img src={Cars} alt="" />
-            </div>
             <div className="ChooseData">
                 <div className="child1">
                     <h2>Why Choose Us</h2>

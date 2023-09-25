@@ -22,7 +22,7 @@ function Testimonials() {
                     <div className="box1a">
                         <img src={Pic1} className='image' alt="" />
                         <div className="box1aa">
-                            <h2>Parry Hotter</h2>
+                            <h2>Hotter</h2>
                             <p>Belgrade</p>
                         </div>
                         <IconQuote width={50} height={50} color='red'/>
@@ -33,7 +33,7 @@ function Testimonials() {
                     <div className="box1a">
                         <img src={Pic2} className='image' alt="" />
                         <div className="box1aa">
-                            <h2>Parry Hotter</h2>
+                            <h2>Hotter</h2>
                             <p>Belgrade</p>
                         </div>
                         <IconQuote width={50} height={50} color='red' />

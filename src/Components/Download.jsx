@@ -10,8 +10,8 @@ function Download() {
                 <h1>Download our app to get most out of it</h1>
                 <p>Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
                 <div className='DownloadImage'>
-                    <img src={Image1} alt="" />
-                    <img src={Image2} alt="" />
+                    <img src={Image1} className='image' alt="" />
+                    <img src={Image2} className='image' alt="" />
                 </div>
             </div>
         </div>

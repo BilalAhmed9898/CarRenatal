@@ -11,7 +11,6 @@ p {
 p:hover {
     color: red;
     cursor: pointer;
-
 }
 
 .Container {
@@ -48,13 +47,17 @@ p:hover {
     cursor: pointer;
 }
 
-.Buttons {
+.mobile {
+    display: none;
+}
+
+.Auth {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.Buttons button {
+.Auth button {
     background-color: red;
     color: white;
     padding: 15px 20px;
@@ -338,10 +341,6 @@ p:hover {
     background-color: rgb(249, 249, 249);
 }
 
-.Chooseus .Image {
-    margin: auto;
-}
-
 .ChooseData {
     display: flex;
     justify-content: space-around;
@@ -401,6 +400,7 @@ p:hover {
     width: 90vw;
     height: 90vh;
     background-image: url(../images/banners/bg02.png);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -519,8 +519,8 @@ p:hover {
 
 .Banner2 {
     position: relative;
-    height: 50vh;
-    width: 90vw;
+    height: 30vh;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -553,14 +553,6 @@ p:hover {
     /* Set the text color */
 }
 
-.Banner2 {
-    width: 100%;
-    height: 30vh;
-    background-repeat: no-repeat;
-
-
-
-}
 
 
 /* Contact Form Css */
@@ -728,101 +720,125 @@ textarea::placeholder {
     box-shadow: 0px 4px 6px rgba(91, 88, 88, 0.4);
     border-radius: 10px;
 }
+
 .mainTeam .child:hover {
     box-shadow: 0px 4px 6px rgba(25, 25, 25, 0.4);
 }
-.mainTeam .child .profile{
-    width:100%;
+
+.mainTeam .child .profile {
+    width: 100%;
     height: 50vh;
     overflow: hidden;
 }
-.mainTeam .child .title{
-    width:100%;
+
+.mainTeam .child .title {
+    width: 100%;
     height: 20vh;
     text-align: center;
 }
- /* About INfo Css */
- .AboutInfo{
+
+/* About INfo Css */
+.AboutInfo {
     display: flex;
     justify-content: center;
     align-items: center;
- }
- .AboutInfo .child1{
+}
+
+.AboutInfo .child1 {
     width: 50%;
- }
- .AboutInfo .child1 .Image{
+}
+
+.AboutInfo .child1 .Image {
     margin-left: 60px;
     margin-top: 50px;
- }
- .AboutInfo .child2{
+}
+
+.AboutInfo .child2 {
     width: 50%;
- }
- .AboutInfo .child2 h2{
+}
+
+.AboutInfo .child2 h2 {
     font-size: 26px;
     font-weight: 400;
- }
- .AboutInfo .child2 h1{
+}
+
+.AboutInfo .child2 h1 {
     font-size: 46px;
     font-weight: 700;
- }
- .AboutInfo .child2 p{
+}
+
+.AboutInfo .child2 p {
     font-size: 18px;
     font-weight: 500;
     color: gray;
- }
- .AboutInfo .child2 .child2aa{
-     display: flex;
+}
+
+.AboutInfo .child2 .child2aa {
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    
- }
- .AboutInfo .child2 .child2aa .child2a{
-    display: flex;
-    flex-direction: column;
- }
- .AboutInfo .child2 .child2aa .child2a .child2ab{
-    display: flex;
- }
- .AboutInfo .child2 .child2aa .child2a h1{
- font-size: 40px;
+
 }
- .AboutInfo .child2 .child2aa .child2a p{
- font-size: 18px;
-  color: gray;
-  font-weight: 500;
-  margin-left: 5px;
-}
-.VehicleInfo{
+
+.AboutInfo .child2 .child2aa .child2a {
     display: flex;
     flex-direction: column;
 }
-.VehicleInfo .text{
+
+.AboutInfo .child2 .child2aa .child2a .child2ab {
+    display: flex;
+}
+
+.AboutInfo .child2 .child2aa .child2a h1 {
+    font-size: 40px;
+}
+
+.AboutInfo .child2 .child2aa .child2a p {
+    font-size: 18px;
+    color: gray;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.VehicleInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.VehicleInfo .text {
     text-align: center;
 }
-.VehicleInfo .text h2{
-  font-size: 32px;
-  font-weight: 400;
+
+.VehicleInfo .text h2 {
+    font-size: 32px;
+    font-weight: 400;
 }
-.VehicleInfo .text h1{
-  font-size: 46px;
-  font-weight: 600;
+
+.VehicleInfo .text h1 {
+    font-size: 46px;
+    font-weight: 600;
 }
-.VehicleInfo .text p{
-  font-size: 18px;
-  font-weight: 400;
-  color: gray;
-  margin-bottom: 50px;
+
+.VehicleInfo .text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 50px;
 }
-.VehicleInfo .content{
+
+.VehicleInfo .content {
     display: flex;
+    gap: 40px;
 }
-.VehicleInfo .content .child1{
+
+.VehicleInfo .content .child1 {
     width: 25%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.VehicleInfo .content .child1 button{
+
+.VehicleInfo .content .child1 button {
     font-size: 22px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -832,35 +848,576 @@ textarea::placeholder {
     outline: none;
     border: none;
 }
-.VehicleInfo  .content .child1 button:hover{
+
+.VehicleInfo .content .child1 button:hover {
     background-color: red;
     color: white;
     cursor: pointer;
 }
-.VehicleInfo .child2{
+
+.VehicleInfo .child2 {
     width: 40%;
     padding: 30px;
 }
-.VehicleInfo .child3{
+
+.VehicleInfo .child3 {
     width: 30%;
     padding: 30px;
 }
+
 table {
     border-collapse: collapse;
     width: 100%;
     height: 60vh;
-  }
+}
 
-  table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
-  }
+}
 
-  th, td {
+th,
+td {
     padding: 13px;
     text-align: left;
-  }
-  th {
-      background-color: orangered;
+}
+
+th {
+    background-color: orangered;
     color: white;
     text-align: left;
-  }
+}
+
+
+
+
+
+@media (max-width: 799px) {
+    .Container-p1 {
+        padding: 30px 40px;
+    }
+
+    .mobile {
+        display: inline;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #f8f8f9;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        right: 0px;
+    }
+
+    .Auth {
+        display: none;
+    }
+
+    .HeroImage .image {
+        display: none;
+        width: 0%;
+    }
+
+    .MainHero {
+        display: flex;
+        justify-content: center;
+    }
+
+    .herotext {
+        width: 80%;
+        text-align: center;
+    }
+
+    .TextFeilds {
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .TextFeilds select {
+        width: 45%;
+    }
+
+    .TextFeilds input {
+        width: 43%;
+    }
+
+    .TextFeilds .Button {
+        width: 46%;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .VehicleInfo .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .VehicleInfo .content .child1 {
+        width: 100%;
+    }
+
+    .VehicleInfo .child2 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .VehicleInfo .child3 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .Banner1 h1 {
+        font-size: 40px;
+    }
+
+    .boxes .box1 {
+        width: 70%;
+    }
+
+    .boxes .box2 {
+        width: 70%;
+    }
+
+    .Faqsmain {
+        background-image: none;
+    }
+
+    .faq {
+        width: 85%;
+        line-height: 1.2;
+        margin: auto;
+    }
+
+    .answer {
+        width: 90%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .Footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Footer .child1 {
+        width: 45%;
+    }
+
+    .Footer .child2 {
+        width: 45%;
+    }
+
+    .Footer .child3 {
+        width: 45%;
+    }
+
+    .Footer .child4 {
+        width: 45%;
+    }
+
+    .Chooseus {
+        display: flex;
+        background-color: rgb(249, 249, 249);
+    }
+
+    .ChooseData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ChooseData .child1 {
+        width: 100%;
+    }
+
+    .ChooseData .child2 {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .Downloads {
+        width: 70vw;
+    }
+
+    .Downloads .text {
+        width: 60%;
+
+    }
+
+    .AboutInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .AboutInfo .child1 {
+        width: 70%;
+    }
+
+    .AboutInfo .child2 {
+        width: 70%;
+    }
+
+    .AboutInfo .child2 h2 {
+        font-size: 22px;
+    }
+
+    .AboutInfo .child2 h1 {
+        font-size: 42px;
+    }
+
+    .BackgroundImage {
+        position: relative;
+        height: 40vh;
+        width: 87vw;
+    }
+
+    .mainTeam {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mainTeam .child {
+        width: 45%;
+        height: 70vh;
+        background-color: #f8f6f6;
+        box-shadow: 0px 4px 6px rgba(91, 88, 88, 0.4);
+        border-radius: 10px;
+    }
+
+    .ContactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 50px 0px;
+    }
+
+    .ContactForm .child1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .ContactForm .child2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Banner2 {
+        position: relative;
+        height: 30vh;
+        width: 89%;
+    }
+
+    .Banner2 h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .Banner2 h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 399px) {
+    .Container-p1 {
+        padding: 20px 30px;
+    }
+    
+    .Container {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .icon img {
+        width: 130px;
+        height: 40px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #f8f8f9;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        right: -110px;
+    }
+
+    .mobile {
+        display: inline;
+    }
+    
+.herotext {
+    width: 100%;
+}
+.herotext h3 {
+    font-size: 20px;
+}
+
+.herotext h1 {
+    font-size: 45px;
+}
+
+.herotext p {
+    font-size: 16px;
+}
+
+.herotext .btn1 {
+    padding: 15px 40px;
+}
+
+.TextFeilds{
+    margin: auto;
+}
+.TextFeilds select {
+    width: 100%;
+}
+
+.TextFeilds input {
+    width: 100%;
+}
+
+.TextFeilds .Button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Footer .child1 {
+    display: block;
+    width: 90%;
+}
+
+.Footer .child2 {
+    width: 90%;
+}
+
+.Footer .child3 {
+    width: 90%;
+}
+
+.Footer .child4 {
+    width: 90%;
+}
+
+.Downloads {
+    width: 80vw;
+    height: 90vh;
+    background-image: url(../images/banners/bg02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Downloads .text {
+    width: 100%;
+    margin: auto;
+}
+.Downloads .text h1 {
+  font-size: 30px;
+}
+.DownloadImage {
+    display: flex;
+}
+.DownloadImage .image {
+    width: 150px;
+    height: 150px;
+}
+.ChooseData{
+    text-align: center;
+}
+.ChooseData .child1 {
+    width: 100%;
+}
+
+.ChooseData .child1 h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.ChooseData .child1 p {
+    color: gray;
+    font-weight: 500;
+}
+
+
+.ChooseData .child2 {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.ChooseData .child2 .child2a {
+    display: flex;
+    flex-direction: column;
+}
+
+.ChooseData .child2 .child2a .Image {
+    margin: auto;
+}
+
+
+.Testimonial .text {
+    text-align: center;
+}
+
+.Testimonial .text h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.Testimonial .text h1 {
+    font-size: 40px;
+}
+.boxes .box1 {
+    width: 90%;
+    padding: 20px 30px;
+}
+
+.boxes .box1 p {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.boxes .box2 {
+    width: 90%;
+    padding: 20px 30px;
+}
+
+.boxes .box2 p {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box1a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1a .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.box1a .box1aa {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.1;
+}
+
+.box1a .box1aa h2 {
+    font-size: 16px;
+    display: block;
+}
+
+.box1a .box1aa p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.AboutInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutInfo .Image {
+    width: 300px;
+    height: 300px;
+  margin: auto;
+}
+
+.AboutInfo .child2 {
+    width: 90%;
+    margin: auto;
+}
+
+.AboutInfo .child2 h2 {
+    font-size: 22px;
+}
+
+.AboutInfo .child2 h1 {
+    font-size: 36px;
+}
+
+.AboutInfo .child2 p {
+    font-size: 16px;
+}
+
+.AboutInfo .child2 .child2aa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.AboutInfo .child2 .child2aa .child2a .Image {
+ width: 130px;
+ height: 130px;
+}
+
+.BackgroundImage {
+    position: relative;
+    height: 40vh;
+    width: 78vw;
+}
+.Banner2 {
+    position: relative;
+    height: 30vh;
+    width: 82%;
+}
+
+.Banner2 h1 {
+    font-size: 26px;
+}
+
+.Banner2 h2 {
+    font-size: 22px;
+}
+
+.mainTeam {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 84%;
+    margin: auto;
+}
+
+.mainTeam .child {
+    width: 100%;
+    height: 70vh;
+    background-color: #f8f6f6;
+    box-shadow: 0px 4px 6px rgba(91, 88, 88, 0.4);
+    border-radius: 10px;
+}
+
+}

@@ -42,7 +42,7 @@ function BookCar() {
           </select>
           <input type="date" />
           <input type="date" />
-          <button>Search</button>
+          <button className='Button'>Search</button>
         </div>
       </div>
     </div>

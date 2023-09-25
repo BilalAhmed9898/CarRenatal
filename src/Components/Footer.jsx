@@ -1,6 +1,5 @@
 import React from 'react'
 import './CompApp.css'
-import { IconQuote } from '@tabler/icons-react'
 
 function Footer() {
   return (
